@@ -10,18 +10,21 @@ import './App.css'
 import data from "./data/data.js"
 import {Routes,Route} from "react-router-dom";
 import NavBarr from './components/navbar.jsx'
+import User from './pages/user.jsx'
 
 function App() {
 
   return (
     <>
     <NavBarr/>
-{    <Routes>
+   <Routes>
       <Route path="/home" element={<Home/>}/>
       <Route path="/contact" element={<Contact/>}/>
        <Route path="/about" element={<About/>}/>  
+       <Route path="/user/:id" element={<User/>}/>
        <Route path='*' element={<>nothing to show bitch</>}/>
-    </Routes>}
+    </Routes>
+  
 
 
     </>
